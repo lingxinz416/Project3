@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <style>
+    .ex3 {
+      color: red;
+
+      position: relative;
+      text-decoration: none;
+    }
+
+    .ex3:after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 3px;
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      background: #FFCE00;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .ex3:hover:after {
+      width: 100%;
+    }
+
+    a.ex3:active {
+      color: black;
+    }
+    div.twidth {
+      width: 50%;
+    }
+  </style>
+
+  <title>Style Guide</title>
+  <link href="css/styleGuide.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+
+<body>
+    <div class="top">
+        <div class="top-menu">
+            <div class="top-menu-left">
+                <a href="StyleGuide.html"><h2>LINGXIN ZENG</h2></a>
+            </div>
+            <div class="top-menu-nav">
+                <a href="Works.html">WORKS</a>
+                <a href="About.html">ABOUT</a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+  <!-- interactive_elements -->
+  <section id="interactive_elements">
+
+
+    <div class="element">
+
+
+      <div class="leftnavigation">
+        <div class="lefttopnavigation">
+          <div class="interactive_elementse">
+            <br>
+            <br>
+            <h2>Interactive Elements</h2>
+            <br>
+            <h4 class="ex4"><a href="#il">In-text link</a></h4>
+            <h4 class="ex4"><a href="#nl">Navigation Link</a></h4>
+            <!-- <h4 class="ex4"><a href="#sb">Submit/Reset Buttons</a></h4>
+            <h4 class="ex4"><a href="#ti">Text Input Field with Label</a></h4>
+            <h4 class="ex4"><a href="#rb">Radio Button with Label</a></h4> -->
+            <h4 class="ex4"><a href="#iml">Image as a Link</a></h4>
+          </div>
+
+
+          <div class="text_elements">
+            <h2>Text <br>Elements</h2>
+            <h4 class="ex4"><a href="#hd">Headings</a></h4>
+            <h4 class="ex4"><a href="#pg">Paragraphs</a></h4>
+            <h4 class="ex4"><a href="#nbl">Numbered Lists</a></h4>
+          </div>
+
+          <div class="combined_elementse">
+            <h2>Products Analasis</h2>
+            <h4 class="ex4"><a href="#mn">Main Navigation</a></h4>
+            <h4 class="ex4"><a href="#pd">Works1</a></h4>
+            <h4 class="ex4"><a href="#pm">Works2</a></h4>
+            <!-- <h4 class="ex4"><a href="#co">Checkout Cart</a></h4> -->
+          </div>
+
+          <div class="citations">
+            <h2>Introduction</h2>
+            <h4 class="ex4"><a href="#ct">Introduction</a></h4>
+          </div>
+
+          <!-- <div class="brandingideas">
+            <h2>Branding</h2>
+            <h4 class="ex4"><a href="#bd">Branding Ideas</a></h4>
+            <h4 class="ex4"><a href="#cp">Assemble Brand Components</a></h4>
+            <h4 class="ex4"><a href="#ad"> Art Direction</a></h4>
+          </div> -->
+        </div>
+
+      </div>
+
+      <div class="render">
+
+        <div class="render1">
+          <div class="intextlink right-title" id="il">
+            <h2>In-text link:</h2>
+            <br>
+            <div class="intexlinkrender ">
+              <div class='inside'>
+                <h4>Contact my Email
+                  <a href="#" class="ex3 linktext">zlx630416@gmail.com </a>
+                  or my Phone number <a href="#" class="ex3 linktext">7782318254</a>.
+                </h4>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="navigation_link right-title" id="nl">
+            <h2>Navigation Link:</h2>
+            <br>
+            <div class="navigationlinkrender">
+              <div class="navigationinside">
+                <h4 class="default-btn"> <a class="default-btn" href="#">Default Button</a></h4>
+              </div>
+            </div>
+
+          </div>
+          <!-- <div class="sumit_buttons right-title" id="sb">
+            <h2>Submit/Reset Buttons:</h2>
+            <br>
+            <div class="sumitbuttonsrender">
+              <div class='sumitbox'>
+                <div class='sumitbutton'>
+                  <input type="Submit" class="sumit" value="SUMIT"></div>
+                <div class='resetbutton'>
+                  <input type="Reset" class="reset" value="RESET"></div>
+              </div>
+
+            </div>
+
+          </div> -->
+          <!-- <div class="text_input right-title" id="ti">
+            <h2>Text Input Field with Label:</h2>
+            <br>
+            <div class="textinputrender">
+            
+              <input id="text-input" class="textinput" type="text" placeholder="Name On Card" />
+            </div>
+          </div> -->
+
+<!-- 
+          <div class="radio_button right-title" id="rb">
+            <h2>Radio Button with Label:</h2>
+            <br>
+            <div class="radiobuttonrender">
+
+              <div class="tabli-choose-basic">
+                <a href="#">
+                  <h3>1 Month</h3>
+                  <h4>9.99CAD</h4>
+                </a>
+              </div>
+              <div class="tabli-choose-basic">
+                <a href="#">
+                  <h3>6 Month</h3>
+                  <h4>45.99CAD</h4>
+                </a>
+              </div>
+
+            </div>
+
+          </div> -->
+          <div class="image_with_link right-title" id="iml">
+            <h2>Image as a Link:</h2>
+            <br>
+            <div class="imagewithlinkrender">
+              <a href="#" class="image"><img src="img/works2.jpg" height="200" alt="No image"> </a>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="render2">
+          <div class="heading right-title" id="hd">
+            <h2>Headings:</h2>
+            <br>
+
+            <div class="headingrender">
+              <h3>Title Heading1</h3>
+              <br>
+              <h4>Body Title Heading2</h4>
+              <br>
+              <h5>Text Heading3</h5>
+              <br>
+            </div>
+
+          </div>
+
+          <div class="paragraphs right-title" id="pg">
+            <h2>Paragraphs:</h2>
+            <br>
+            <div class="paragraphsrender">
+              <h4>
+                Welcome to the new game trade system.
+                Here you can trade your game set much faster and much easier.
+                <br>
+                Enjoy your game.
+              </h4>
+            </div>
+
+          </div>
+
+          <div class="numbered_lists right-title" id="nbl">
+            <h2>Numbered Lists:</h2>
+            <br>
+            <div class="numberedlistsrender">
+              <h3> List one
+              </h3>
+              <br>
+              <ul>
+                <li> High Noon Ashe </li>
+                <li> High Noon Darius </li>
+                <li> High Noon Shen</li>
+              </ul>
+              <br>
+              <h3>List two
+              </h3>
+              <br>
+              <ol>
+                <li>&nbsp;&nbsp;&nbsp;High Noon Ashe </li>
+                <li>&nbsp;&nbsp;&nbsp;High Noon Darius</li>
+                <li>&nbsp;&nbsp;&nbsp;High Noon Shen</li>
+              </ol>
+            </div>
+
+
+          </div>
+        </div>
+
+        <div class="3render3">
+
+          <div class="main_navigation right-title" id="mn">
+            <h2>Main Navigation:</h2>
+            <br>
+            <div class="mainnavigationrender">
+              <div class="mainnavigationbutton">
+              
+                <h4 class="ex4"><a href="#il">Works</a></h4>
+                <h4 class="ex4"><a href="#il">About</a></h4>
+      
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="image_with_link right-title" id="iml">
+            <h2>Works1:</h2>
+            <br>
+            <div class="imagewithlinkrender">
+              <a href="Works.html" class="image"><img src="img/works1.jpg" height="200" alt="No image"> </a>
+              <h3>Design Brief</h3>
+              <p>DIY travel is an app that makes travel plans for tourists. It can recommend tourist destinations and
+                  provide tourist strategies according to tourists' wishes.</p>
+            </div>
+          </div>
+
+          <div class="image_with_link right-title" id="iml">
+              <h2>Works2:</h2>
+              <br>
+              <div class="imagewithlinkrender">
+                <a href="Works.html" class="image"><img src="img/works2.jpg" height="200" alt="No image"> </a>
+                <h3>Design Brief</h3>
+                <p>
+                    Happy Growth is an app that helps cultivate children's interests and hobbies, and it improve the
+                    relationship between parents and children.
+                </p>
+              </div>
+            </div>
+
+        <div class="render4">
+          <div class="citation right-title" id="ct">
+            <h2>Introduction:</h2>
+            <br>
+            <div class="citationrender">
+              <h2>Introduce myself</h2>
+              <p>I am Lingxin Zeng, a young user experience(product) designer, studying in SFU. With an academic
+                  background
+                  of 3D Animation, I trained myself started to be a UX designer in 2018.
+              </p>
+  
+              <p>To be a great UX designer, I believe there are three key abilities are important - Empathy,
+                  critical(design) thinking, and collaboration. These are also the things that I think can make myself
+                  outstanding among a group of designers.</p>
+            </div>
+          </div>
+
+          <!-- <div class="brand right-title" id="bd">
+            <h2>Branding Ideas:</h2>
+            <br>
+            <div class="brandrender">
+              <h3>Company type:</h3>
+              <p> &nbsp;&nbsp;&nbsp;&nbsp;Netflix, Inc. is an American media-services provider and
+                production company headquartered in Los Gatos, California, founded in 1997 by Reed Hastings and Marc
+                Randolph in Scotts Valley, California. The company's primary business is its subscription-based
+                streaming
+                service which offers online streaming of a library of films and television programs, including those
+                produced in-house.
+
+              </p>
+
+            </div>
+          </div> -->
+
+          <div class="c right-title" id="cp">
+            <h2>Components:</h2>
+            <br>
+
+
+            <div class="crender">
+              <h3>Font</h3>
+              <br>
+              <div class='mukta'>
+                <h2>Poppins</h2>
+                <h5>regular</h5>
+              </div>
+
+
+              <br>
+              
+
+              <section>
+                  <h3>Colour palettes:</h3>
+                <div class="color">
+
+                  <div class="nav-title">
+                    <p>#303030</p>
+                  </div>
+                  <div class="background-color">
+                    <p>#2a2a2a</p>
+                  </div>
+                  <div class="font-color">
+                    <p>#8f8f8f</p>
+                  </div>
+
+                  <div class="button-color">
+                    <p>#fa5c17</p>
+                  </div>
+
+                  <div class="font-color-2">
+                    <p>Seashell</p>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+
+          <!-- <div class="ad right-title" id="ad">
+            <h2>Art Direction:</h2>
+            <br>
+
+            <div class="adrender">
+              <h3>Art direction: </h3>
+              <div class='heyhey'>
+                <a href="#"><img src="img/22.png" width="200" alt="No image"> </a>
+                <a href="#"><img src="img/33.jpg" width="200" alt="No image"> </a>
+              </div>
+              <p>
+                Art direction: 3D reality is the art direction we want to achieve. The layer superposition creates the
+                depth of the website and makes it more realities. Also, the 3D reality increases the enjoyment of the
+                website, which encourages the user to stay on the website. Base on the original Nextfix website, we
+                found
+                out that the combination of white and red is mainly used, which easy for catching the attention of the
+                audience. So, we will mainly use red and white colour for our web design.
+              </p>
+            </div>
+          </div> -->
+
+
+        </div>
+      </div>
+    </div>
+
+</section>
+
+
+
+</body>
+
+</html>
