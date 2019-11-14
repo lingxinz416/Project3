@@ -1,0 +1,129 @@
+/* Header Start*/
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+  font-family: 'Nunito', sans-serif;
+  /* border: 1px solid red; */
+
+}
+.top-menu-nav a{
+  text-decoration: none;
+  font-family: 'Nunito', sans-serif;
+  color:black;
+}
+
+
+body{
+	background-color: white;
+}
+.top{
+  position: absolute;
+  top: 0;
+
+}
+.top-menu{
+  padding-top: 2em;
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  height: auto;
+  opacity: 0.9;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.top-menu h2{
+  font-size: 40px;
+}
+.top-menu-left a{
+    text-decoration: none;
+    color: silver;
+    transition: 0.5s ease-in-out;
+}
+.top-menu-left a:hover{
+    color: black
+}
+.top-menu-left{
+
+  margin-left: 3em;
+}
+.top-menu-nav{
+
+  margin-right: 2em;   
+}
+.top-menu-nav a{
+  position: relative;
+  margin: 0 1em;
+  color: silver;
+}
+.top-menu-nav a::after{
+  content: '';
+  display: block;
+width: 0;
+height: 3px;
+position: absolute;
+left: 0;
+/* bottom: -18px; */
+background:red;
+transition:all 0.3s ease-in-out;
+-webkit-transition: all 0.3s ease-in-out;
+-moz-transition: all 0.3s ease-in-out;
+-ms-transition: all 0.3s ease-in-out;
+}
+.top-menu-nav a:hover::after{
+  width: 100%;
+}
+/* Header End*/
+
+/* main start */
+.menu{
+    display: flex;
+    margin-top: 10em;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.main-news-img img{
+    margin-left: 10vw;
+    width: 80%;
+    height: auto;
+    transition: all 1s ease-in-out;
+}
+.main-news-img h2{
+    text-align: center;
+    font-size: 2vw;
+}
+.menu-works2 img{
+    width: 80%;
+    height: auto;
+    transition: all 1s ease-in-out;
+}
+.menu-works2 h2{
+    text-align: center;
+    font-size: 2vw;
+}
+/* main end */
+
+@media screen and (max-width:543px){
+    .top-menu h2{
+        font-size: 30px;
+      }
+      .menu{
+          flex-wrap: wrap;
+          margin-top: 8em;
+      }
+      .menu-works2 img{
+        margin-left: 10vw;
+      }
+      .top-menu-nav a{
+          margin: 0 7px;
+          font-size: 2vw;
+      }
+}
+
+@media screen and (max-width:473px){
+    .top-menu h2{
+        font-size: 20px;
+      }
+
+}

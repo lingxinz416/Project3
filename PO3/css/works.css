@@ -109,7 +109,12 @@ transition:all 0.3s ease-in-out;
     width: 100px;
 } */
 
+.menu-works1 h2{
+    margin-top: 8em;
+    display: flex;
+    justify-content: center;
 
+}
 .main-news-img img{
     width: 50%;
 
@@ -118,7 +123,8 @@ transition:all 0.3s ease-in-out;
     /* margin-top: 8em; */
     width: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 
 }
 .menu-works2 img{
