@@ -18,3 +18,5 @@ tl.fromTo(
     ).fromTo(logo, 0.5, {opacity:0, x:30}, {opacity:1, x:0},"-=0.5")
     .fromTo(hamburger, 0.5, {opacity:0, x:30}, {opacity:1, x:0},"-=0.5")
     .fromTo(headline, 0.5, {opacity:0, x:30}, {opacity:1, x:0},"-=0.5");
+
+ 

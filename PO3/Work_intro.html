@@ -4,9 +4,12 @@
 <head>
     <meta charset="utf-8">
     <title>PORTFOLIO</title>
+    
+    <link rel="stylesheet" href="css/aos.css" />
     <link href="css/work_intro.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
 
 <body>
@@ -18,23 +21,35 @@
                 </a>
             </div>
             <div class="top-menu-nav">
-                <a href="Works.html">WORKS</a>
+                <a href="Work_intro.html">WORKS</a>
                 <a href="About.html">ABOUT</a>
             </div>
         </div>
     </div>
 
     <div class="menu">
-        <div class="main-news-img">
-            <img src="img/works1.jpg" alt="travel app">
-            <h2>Project: DIY Travel</h2>
+        <div class="menu-works2">
+            <a href="Works.html"><img src="img/Travel.jpg" alt="travel app" data-aos="zoom-in"></a>
+            <a href="Works.html">
+                <h2>Project: DIY Travel</h2>
+            </a>
         </div>
         <div class="menu-works2">
-            <img src="img/works2.jpg" alt="education app">
-            <h2>Project: Happy Growth</h2>
+            <a href="Works1.html"><img src="img/works2.jpg" alt="education app" data-aos="zoom-in"></a>
+            <a href="Works1.html">
+                <h2>Project: Happy Growth</h2>
+            </a>
         </div>
     </div>
+    <script src="js/aos.js"></script>
+    <script>
+     
+        AOS.init({
+            ease:'ease-in-out'
+        });
+    </script>
 
 
 </body>
+
 </html>

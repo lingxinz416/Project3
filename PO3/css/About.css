@@ -15,7 +15,7 @@
 
 
 body{
-	background-color: white;
+	background: linear-gradient(to left, #ba7453, #d1a984);
 }
 .top{
   position: absolute;
@@ -25,7 +25,7 @@ body{
 .top-menu{
   padding-top: 2em;
   position: fixed;
-  background-color: white;
+  background: linear-gradient(to left, #ba7453, #d1a984);
   width: 100%;
   height: auto;
   opacity: 0.9;
@@ -38,7 +38,7 @@ body{
 }
 .top-menu-left a{
     text-decoration: none;
-    color: silver;
+    color: white;
     transition: 0.5s ease-in-out;
 }
 .top-menu-left a:hover{
@@ -46,7 +46,7 @@ body{
 }
 .top-menu-left{
 
-  margin-left: 3em;
+  margin-left: 10vw;
 }
 .top-menu-nav{
 
@@ -55,7 +55,7 @@ body{
 .top-menu-nav a{
   position: relative;
   margin: 0 1em;
-  color: silver;
+  color: white;
 }
 .top-menu-nav a::after{
   content: '';
@@ -77,14 +77,15 @@ transition:all 0.3s ease-in-out;
 /* Header End*/
 .menu-img{
     margin-top: 8em;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-
+    width: 65%;
+    margin-left: 18vw;
 }
+
+
 .menu-img img{
-    width: 20%;
-    border-radius: 50%;
+    width: 100%;
+    height: auto;
+    /* border-radius: 50%; */
 }
 .menu-content{
     margin: 3em 10em;
@@ -92,8 +93,31 @@ transition:all 0.3s ease-in-out;
 .menu-content p{
     line-height: 2em;
     font-size: 20px;
+    color: white;
 
 }
+.menu-content .abc a{
+    position: relative;
+    text-decoration: none;
+    color: white;
+}
+.menu-content .abc a::before{
+    content: '';
+    display: block;
+  width: 0%;
+  height: 3px;
+  position: absolute;
+  left: 0;
+  /* bottom: -18px; */
+  background:white;
+  transition:all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  }
+  .menu-content .abc a:hover::before{
+    width: 100%;
+  }
 .menu-content>div{
 
     display: flex;
@@ -102,7 +126,7 @@ transition:all 0.3s ease-in-out;
 }
 .Resume a{
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: 20px;
     display: flex;
     justify-content: flex-end;
@@ -125,7 +149,7 @@ transition:all 0.3s ease-in-out;
         margin-right: 13em;
     }
     .menu-img{
-        margin-top: 6em;
+        margin-top: 7em;
     }
 }
 @media screen and (max-width:1045px){
@@ -178,20 +202,37 @@ transition:all 0.3s ease-in-out;
         margin-right: 5em;
         font-size: 16px;
     }
-    .menu-img{
-        margin-top: 10em;
+
+    .top-menu-nav a{
+        margin: 0 7px;
+        font-size: 3vw;
     }
+    .top-menu h2{
+        font-size: 30px;
+      }
 }
 @media screen and (max-width:456px){
+    .menu-img{
+        width: 80%;
+        margin-left: 10vw;
+    }
+    .top-menu-left h2{
+        font-size: 20px;
+        /* margin-left: 5vw; */
+        
+    }
+    .top-menu-nav a{
+        margin: 0 5px;
+    }
     .menu-content>div{
         padding: 0 3em;
     }
     .menu-content p{
-        font-size: 16px;
+        font-size: 3vw;
     }
     .Resume a{
         margin-right: 3em;
-        font-size: 16px;
+        font-size: 3vw;
     }
 
 }
