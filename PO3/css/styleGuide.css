@@ -53,23 +53,12 @@ body{
 .top-menu-nav a{
   position: relative;
   margin: 0 1em;
+  color: white;
+  transition: 0.5s ease-in-out;
+  text-decoration: none;
 }
-.top-menu-nav a::after{
-  content: '';
-  display: block;
-width: 0;
-height: 3px;
-position: absolute;
-left: 0;
-/* bottom: -18px; */
-background:red;
-transition:all 0.3s ease-in-out;
--webkit-transition: all 0.3s ease-in-out;
--moz-transition: all 0.3s ease-in-out;
--ms-transition: all 0.3s ease-in-out;
-}
-.top-menu-nav a:hover::after{
-  width: 100%;
+.top-menu-nav a:hover{
+    color:black;
 }
 /* Header End*/
 
@@ -207,7 +196,7 @@ transition:all 0.3s ease-in-out;
   ,.citationrender,.brandrender,.crender,.adrender{
 
     padding: 2em;
-    display: flex;
+    /* display: flex; */
     display:inline-table;
 
     list-style: inside;
@@ -249,23 +238,24 @@ transition:all 0.3s ease-in-out;
 
 
   .navigationlinkrender h4{
-    padding: 1em;
-    border-radius: 25px;
+    /* padding: 1em; */
+    /* border-radius: 25px; */
   }
   .navigationlinkrender a{
     text-decoration: none;
-    padding:1em;
+    /* padding:1em; */
     color: white;
-    background-color: rgba(0,0,0,0.3);
-    border-radius: 50px;
-    border: 1px solid #fa5c17;
+    /* background-color:white; */
+    /* border-radius: 50px; */
+    /* border: 1px solid #fa5c17; */
 
-    -webkit-transition: background-color 0.5s ease-out;
-    transition: background-color 0.5s ease-out;
+    -webkit-transition: color 0.5s ease-out;
+    -moz-transition: color 0.5s ease-out;
+    -ms-transition: color 0.5s ease-out;
+    transition: color 0.5s ease-out;
   }
-  .navigationlinkrender a:hover, .navigationlinkrender a:focus {
-    background-color: #fa5c17;
-    box-shadow: 3px 3px 3px #91330a;
+  .navigationlinkrender a:hover{
+    color: black;
   }
 
 
@@ -486,12 +476,12 @@ transition:all 0.3s ease-in-out;
  display: flex;
 }
 .font-color{
-  background-color: #8f8f8f;
+  background-color: red;
  width: 100px;
  height: 100px;
 }
 .background-color{
- background-color: silver;
+  background: linear-gradient(to left, #ba7453, #d1a984);
  width: 100px;
  height: 100px;
 }
@@ -502,7 +492,7 @@ transition:all 0.3s ease-in-out;
  height: 100px;
 }
 .button-color{
- background-color: #fa5c17;
+ background-color: white;
  width: 100px;
  height: 100px;
 }
@@ -687,19 +677,32 @@ transition:all 0.3s ease-in-out;
     background-color: rgb(214, 214, 214);
 }
 
-
-
-
-
-
-
 @media screen and (max-width:773px){
 	.main .main-content{
 		margin: 2em 7.5em;
 		
 	}
+}
 
+@media screen and (max-width: 539px){
+  .top-menu h2{
+    font-size: 5vw;
+  }
+  .top-menu-nav a{
+    font-size: 3vw;
+  }
+}
 
-
-
+@media screen and (max-width: 418px){
+  .intexlinkrender, .navigationlinkrender,.sumitbuttonsrender,.textinputrender,.radiobuttonrender,
+  .headingrender, .paragraphsrender, .numberedlistsrender
+  ,.mainnavigationrender,.productrender,.paymentrender,.checkoutrender
+  ,.citationrender,.brandrender,.crender,.adrender{
+    padding: 1vw;
+  }
+  .imagewithlinkrender img{
+    padding: 1em;
+    width: 65vw;
+    height: auto;
+  }
 }
